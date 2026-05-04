@@ -1,25 +1,62 @@
-import user from "../assets/user.png";
+
+
+const stepsCard=[
+
+    {
+        "id":1,
+        "image":"../src/assets/user.png",
+        "h2":"Create Account",
+        "p":"Sign up for free in seconds. No credit card required to get started.",
+
+    },
+    {
+        "id":2,
+        "image":"../src/assets/package.png",
+        "h2":"Choose Products",
+        "p":"Browse our catalog and select the toolsthat fit your needs.",
+
+    },
+    {
+        "id":3,
+        "image":"../src/assets/rocket.png",
+        "h2":"Start Creating",
+        "p":"Download and start using your premium tools immediately.",
+
+    },
+
+]
 
 const Steps = () => {
   return (
-    <div className="flex items-center justify-center bg-[#F9FAFC]">
-      <div className="mt-[120px] mb-[200px]">
-        <div>
-          <h2 className="font-extrabold text-[48px]">Get Started in 3 Steps</h2>
-          <p className="text-[#627382] text-[16px]">
-            Start using premium digital tools in minutes, not hours.
-          </p>
-        </div>
 
-        <div className="bg-white max-w[380px] relative">
-          <p className="w-[25px] h-[25px] absolute  right-2.5 bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-3xl text-center text-white">
-            01
-          </p>
-          <div className="text-center items-center justify-center flex flex-col">
-            <img src={user} className="h-[99px] w-[100px] bg-purple-100 rounded-[50%] " alt="" />
-            <h3 className="text-[24px] font-bold">Create Account</h3>
+   <div className="py-20 px-5 bg-[#F9FAFC] text-center">
+      <div className="mb-16">
+        <h2 className="font-extrabold text-[48px]">Get Started in 3 Steps</h2>
+        <p className="text-[#627382] text-[16px]">
+          Start using premium digital tools in minutes, not hours.
+        </p>
+      </div>
+
+      <div className="grid  md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        {stepsCard.map((card, id) => (
+          <div 
+            key={id} 
+            className="rounded-4xl  bg-white shadow-md hover:shadow-2xl  relative p-10 flex flex-col items-center justify-center h-87.5"
+          >
+    
+            <p className="w-8 h-8 absolute top-4 right-4  flex items-center justify-center bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-full text-white font-bold">
+              {card.id}
+            </p>
+
+            <div className="flex flex-col items-center gap-6">
+              <div className="w-24 h-24 bg-[#f5f3ff] rounded-full flex items-center justify-center">
+                <img src={card.image} className="h-12 w-12" alt={card.h2} />
+              </div>
+              <h3 className="text-[24px] font-bold text-[#111827]">{card.h2}</h3>
+              <p className="text-[#627382] leading-relaxed">{card.p}</p>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
