@@ -8,6 +8,7 @@ import Tools from "./components/Tools";
 import Carts from "./components/Carts";
 import { ToastContainer } from "react-toastify";
 import Steps from "./components/Steps";
+import Pricing from "./components/Pricing";
 
 function App() {
   const [carts, setCarts] = useState([]);
@@ -22,6 +23,7 @@ function App() {
       {/* <Carts/> */}
       <ToastContainer />
       <Steps />
+      <Pricing/>
     </div>
   );
 }
