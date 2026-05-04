@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
+    "icon": "https://i.ibb.co/LzNf9m9/ai-writing.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["2000+ templates", "Monthly updates", "Commercial license"],
+    "icon": "https://i.ibb.co/vX1Zz2y/design-pack.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["10M+ assets", "Commercial use", "No attribution"],
+    "icon": "https://i.ibb.co/mS0GfXb/stock-assets.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+    "price": 79,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["50+ automations", "API access", "Custom workflows"],
+    "icon": "https://i.ibb.co/k0Y5P2j/automation.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes and cover letters that land interviews.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "https://i.ibb.co/YyY1D8r/resume-builder.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Complete toolkit for creating engaging social media content across all platforms.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
+    "icon": "https://i.ibb.co/fHnS3M7/social-media.png"
+  },
+  {
+    "id": 7,
+    "name": "Smart PDF Converter",
+    "description": "Advanced tool to convert, compress, and edit PDF files with OCR support.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "popular",
+    "features": ["OCR text extraction", "Bulk conversion", "Password protection"],
+    "icon": "https://i.ibb.co/Xz9f9m9/pdf-converter.png"
+  },
+  {
+    "id": 8,
+    "name": "SEO Analyzer Tool",
+    "description": "Identify SEO issues and get recommendations to rank higher on Google.",
+    "price": 149,
+    "period": "yearly",
+    "tag": "Pro Only",
+    "tagType": "best-seller",
+    "features": ["Keyword tracking", "Competitor analysis", "Backlink checker"],
+    "icon": "https://i.ibb.co/vX1Zz2y/seo-tool.png"
+  }
+]

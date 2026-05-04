@@ -1,6 +1,6 @@
 import logo from "../assets/products/digitools.png";
 
-export default function Navbar() {
+export default function Navbar({cartsProp}) {
   return (
     <div className="navbar bg-base-100 shadow-sm max-w-400 px-50">
       <div className="navbar-start">
@@ -76,7 +76,7 @@ export default function Navbar() {
             />{" "}
           </svg>
           <span className="badge badge-sm indicator-item bg-red-500 text-white">
-            0
+            {cartsProp.length}
           </span>
         </div>
 
