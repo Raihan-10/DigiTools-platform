@@ -8,7 +8,7 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
-    "icon": "https://i.ibb.co/LzNf9m9/ai-writing.png"
+    "icon": "./src/assets/products/writing.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["2000+ templates", "Monthly updates", "Commercial license"],
-    "icon": "https://i.ibb.co/vX1Zz2y/design-pack.png"
+    "icon": "./src/assets/products/design-tool.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "New",
     "tagType": "new",
     "features": ["10M+ assets", "Commercial use", "No attribution"],
-    "icon": "https://i.ibb.co/mS0GfXb/stock-assets.png"
+    "icon": "./src/assets/products/premium.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["50+ automations", "API access", "Custom workflows"],
-    "icon": "https://i.ibb.co/k0Y5P2j/automation.png"
+    "icon": "./src/assets/products/portfolio.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "New",
     "tagType": "new",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "https://i.ibb.co/YyY1D8r/resume-builder.png"
+    "icon": "./src/assets/products/operation.png"
   },
   {
     "id": 6,
@@ -63,28 +63,6 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
-    "icon": "https://i.ibb.co/fHnS3M7/social-media.png"
-  },
-  {
-    "id": 7,
-    "name": "Smart PDF Converter",
-    "description": "Advanced tool to convert, compress, and edit PDF files with OCR support.",
-    "price": 9,
-    "period": "monthly",
-    "tag": "Trending",
-    "tagType": "popular",
-    "features": ["OCR text extraction", "Bulk conversion", "Password protection"],
-    "icon": "https://i.ibb.co/Xz9f9m9/pdf-converter.png"
-  },
-  {
-    "id": 8,
-    "name": "SEO Analyzer Tool",
-    "description": "Identify SEO issues and get recommendations to rank higher on Google.",
-    "price": 149,
-    "period": "yearly",
-    "tag": "Pro Only",
-    "tagType": "best-seller",
-    "features": ["Keyword tracking", "Competitor analysis", "Backlink checker"],
-    "icon": "https://i.ibb.co/vX1Zz2y/seo-tool.png"
+    "icon": "./src/assets/products/social-media.png"
   }
 ]
