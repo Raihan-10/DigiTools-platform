@@ -19,7 +19,7 @@ const Tools = ({ cartsProp, setCartsProp }) => {
      <div className="flex items-center justify-center gap-0">
   <button 
     onClick={() => setActiveTab('tools')} 
-    className={`px-8 py-3 rounded-full font-bold transition-all ${
+    className={`cursor-pointer px-8 py-3 rounded-full font-bold transition-all ${
       activeTab === 'tools' 
       ? "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white" 
       : "bg-[#F9FAFC] text-black"
@@ -30,7 +30,7 @@ const Tools = ({ cartsProp, setCartsProp }) => {
   
   <button 
     onClick={() => setActiveTab('carts')} 
-    className={`px-8 py-3 rounded-full font-bold transition-all ${
+    className={`cursor-pointer px-8 py-3 rounded-full font-bold transition-all ${
       activeTab === 'carts' 
       ? "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white" 
       : "bg-[#F9FAFC] text-black border border-gray-100"

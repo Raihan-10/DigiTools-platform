@@ -1,2 +1,7 @@
 @import "tailwindcss";
 @import "daisyui/daisyui.css";
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+
+@theme{
+    --font-manrope:"Manrope", sans-serif;
+}

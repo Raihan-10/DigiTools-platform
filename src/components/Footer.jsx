@@ -4,8 +4,8 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-[#101727] text-white  max-w-400 px-50 py-[30px]">
-      <div className=" grid grid-cols-3 gap-30 leading-4xl py-[80px]">
+    <div className="bg-[#101727] text-white w-full py-[30px]">
+      <div className=" grid grid-cols-3 gap-30 leading-4xl container mx-auto py-[80px]">
         <div className="space-y-10 leading-7">
           <h3 className="font-extrabold text-5xl">DigiTools</h3>
           <p className="opacity-80">
@@ -56,7 +56,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="text-white h-3 opacity-50" />
+      <div className=" container mx-auto">
+        <hr className="text-white h-3 opacity-50 " />
 
       <div className="text-[#FAFAFA] flex flex-row justify-between opacity-50 ">
         <p className="leading-[24px] ">© 2026 Digitools. All rights reserved.</p>
@@ -68,6 +69,7 @@ const Footer = () => {
           </ul>
         </div>
 
+      </div>
       </div>
     </div>
   );
