@@ -1,4 +1,5 @@
 import { toast } from "react-toastify";
+import cart from '../assets/products/shopping-cart.png';
 
 
 const Carts = ({ cartsProp,setCartsProp }) => {
@@ -10,18 +11,17 @@ const Carts = ({ cartsProp,setCartsProp }) => {
     }
   if (cartsProp.length == 0) {
     return (
-      <div>
-        <p>Your cart is empty!</p>
+      <div className="bg-base-200 w h-[200px] text-center flex flex-col gap-10 items-center justify-center container mx-auto">
+        <img src={cart} className="w-15 bg-white rounded-2xl p-3" alt="" />
+        <p className="text-2xl">Your cart is empty!</p>
       </div>
     );
   }
   const checkOut = ()=>{
   toast.success('You have successfully purchased')
+  setCartsProp([])
 
   }
-
-
-  // const total = cartsProp.reduce(c=>())
   return (
     <div className="max-w-400 px-50">
 
@@ -32,7 +32,7 @@ const Carts = ({ cartsProp,setCartsProp }) => {
             <img className="rounded object-contain w-9 h-9" src={c.icon} alt="" />
             <div className="text-start w-full">
               <h2 className="text-xl font-semibold">{c.name}</h2>
-              <p className="font-medium text-[16px]">{c.price}</p>
+              <p className="font-medium text-[16px] text-[#627382]">${c.price}</p>
             </div>
           </div>
           <button onClick={()=> remove(c.id)} className="btn btn-error text-white hover:bg-red-500 ">Remove</button>

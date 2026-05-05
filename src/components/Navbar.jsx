@@ -2,7 +2,7 @@ import logo from "../assets/products/digitools.png";
 
 export default function Navbar({cartsProp}) {
   return (
-    <div className="navbar bg-base-100 shadow-sm max-w-400 px-50">
+    <div className="navbar px-50  navbar shadow-lg fixed top-0 left-0 w-full z-50 bg-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

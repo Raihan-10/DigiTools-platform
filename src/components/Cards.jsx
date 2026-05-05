@@ -17,24 +17,33 @@ const Cards = ({ cartsProp, setCartsProp }) => {
     setCartsProp([...cartsProp, tool]);
     toast.success("Item added");
   };
+
   return (
     <div className="grid grid-cols-3 justify-center gap-10 max-w-400 px-50">
       {cards.map((card) => (
         <div className="card w-full shadow-md ">
           <div className="card-body gap-3">
-            
-           <div className="flex justify-between items-start">
+            <div className="flex justify-between items-start">
               <div className="bg-white p-3 rounded-2xl border border-gray-100">
-                <img src={card.icon} alt={card.name} className="w-10 h-10 object-contain" />
+                <img
+                  src={card.icon}
+                  alt={card.name}
+                  className="w-10 h-10 object-contain"
+                />
               </div>
-              <span className={`px-4 py-1 rounded-full text-sm font-medium ${
-                card.tagType === 'best-seller' ? 'bg-orange-100 text-orange-600' : 
-                card.tagType === 'popular' ? 'bg-purple-100 text-purple-600' : 'bg-green-100 text-green-600'
-              }`}>
+              <span
+                className={`px-4 py-1 rounded-full text-sm font-medium ${
+                  card.tagType === "best-seller"
+                    ? "bg-orange-100 text-orange-600"
+                    : card.tagType === "popular"
+                      ? "bg-purple-100 text-purple-600"
+                      : "bg-green-100 text-green-600"
+                }`}
+              >
                 {card.tag}
               </span>
             </div>
-            
+
             <div className="text-start flex-row">
               <h2 className="font-bold text-2xl">{card.name}</h2>
               <p className="text-[16px] text-[#627382]">{card.description}</p>
@@ -53,10 +62,17 @@ const Cards = ({ cartsProp, setCartsProp }) => {
 
             <div className="card-actions">
               <button
-                className="btn btn-primary w-full  bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-3xl"
+                className={`btn w-full rounded-3xl transition-all ${
+                  cartsProp.find((c) => c.id === card.id)
+                    ? "bg-green-400 cursor-not-allowed text-white border-none"
+                    : "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white"
+                }`}
                 onClick={() => addToCart(card)}
+                disabled={cartsProp.find((c) => c.id === card.id)}
               >
-                Buy Now
+                {cartsProp.find((c) => c.id === card.id)
+                  ? "Added to Cart"
+                  : "Buy Now"}
               </button>
             </div>
           </div>
