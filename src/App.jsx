@@ -9,6 +9,7 @@ import Carts from "./components/Carts";
 import { ToastContainer } from "react-toastify";
 import Steps from "./components/Steps";
 import Pricing from "./components/Pricing";
+import Workflow from "./components/Workflow";
 
 function App() {
   const [carts, setCarts] = useState([]);
@@ -24,6 +25,7 @@ function App() {
       <ToastContainer />
       <Steps />
       <Pricing/>
+      <Workflow/>
     </div>
   );
 }
