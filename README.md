@@ -3,7 +3,7 @@
 A web platform where user can purchase some ai items to make work easier and faster.
 # Technology that are used in to build this site
 To run and build the project: Vite
-Tech:
+# Tech:
 1.TailwindCss
 2.DaisyUI
 3.React 
