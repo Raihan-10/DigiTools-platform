@@ -1,4 +1,4 @@
-import logo from "../assets/products/digitools.png";
+import logo from "../assets/digitools.png";
 
 export default function Navbar({ cartsProp }) {
   return (

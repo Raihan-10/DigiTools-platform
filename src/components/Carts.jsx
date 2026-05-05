@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-import cart from "../assets/products/shopping-cart.png";
+import cart from "../assets/shopping-cart.png";
 
 const Carts = ({ cartsProp, setCartsProp }) => {
   const total = cartsProp.reduce((sum, cart) => sum + cart.price, 0);
