@@ -1,4 +1,3 @@
-import React from "react";
 import { TiTick } from "react-icons/ti";
 const pricingCard = [
   {
@@ -45,12 +44,12 @@ const pricingCard = [
 
 const Pricing = () => {
   return (
-    <div className="bg-white py-[120px]">
-      <div className="max-w-7xl mx-auto  px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+    <div className="bg-white md:py-30">
+      <div className="md:max-w-7xl mx-auto  px-6 grid md:grid-cols-3 gap-4 md:gap-8 items-stretch">
         {pricingCard.map((card, id) => (
           <div
             key={id}
-            className={`hover:shadow-2xl relative p-8 rounded-[32px] shadow-sm flex flex-col justify-between ${
+            className={`hover:shadow-2xl relative p-8 md:rounded-4xl shadow-sm flex flex-col justify-between ${
               card.name === "Pro"
                 ? "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white"
                 : "bg-[#F2F2F2] text-black"

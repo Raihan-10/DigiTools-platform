@@ -14,18 +14,16 @@ function App() {
   const [carts, setCarts] = useState([]);
 
   return (
-    <div className="font-manrope">
+    <div className="font-manrope overflow-hidden">
       <Navbar cartsProp={carts} />
       <Banner />
       <States />
       <Tools cartsProp={carts} setCartsProp={setCarts} />
-      {/* <Cards /> */}
-      {/* <Carts/> */}
       <ToastContainer />
       <Steps />
-      <Pricing/>
-      <Workflow/>
-      <Footer/>
+      <Pricing />
+      <Workflow />
+      <Footer />
     </div>
   );
 }

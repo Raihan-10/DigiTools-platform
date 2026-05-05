@@ -19,9 +19,9 @@ const Cards = ({ cartsProp, setCartsProp }) => {
   };
 
   return (
-    <div className="grid grid-cols-3 justify-center gap-10 max-w-400 px-50">
+    <div className="grid md:grid-cols-3 justify-center gap-5 md:gap-10 w-full md:max-w-400 md:px-50 p-2">
       {cards.map((card) => (
-        <div className="card w-full shadow-md ">
+        <div className="card w-full shadow-md">
           <div className="card-body gap-3">
             <div className="flex justify-between items-start">
               <div className="bg-white p-3 rounded-2xl border border-gray-100">
@@ -44,7 +44,7 @@ const Cards = ({ cartsProp, setCartsProp }) => {
               </span>
             </div>
 
-            <div className="text-start flex-row">
+            <div className="text-start flex-row space-y-3 md:space-y-6">
               <h2 className="font-bold text-2xl">{card.name}</h2>
               <p className="text-[16px] text-[#627382]">{card.description}</p>
               <p>

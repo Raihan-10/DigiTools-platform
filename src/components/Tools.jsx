@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import Cards from "./Cards";
 import Carts from "./Carts";
 
@@ -8,9 +8,9 @@ const Tools = ({ cartsProp, setCartsProp }) => {
 
 
   return (
-    <div className="space-y-5 justify-center text-center py-30">
+    <div className="md:space-y-5 space-y-4  justify-center text-center py-15 md:py-30">
       <div>
-        <h2 className="font-extrabold text-5xl">Premium Digital Tools</h2>
+        <h2 className="font-extrabold text-2xl md:text-5xl">Premium Digital Tools</h2>
         <p className="text-[16px] mt-4 text-[#627382]">
           Choose from our curated collection of premium digital products
           designedto boost your productivity and creativity.

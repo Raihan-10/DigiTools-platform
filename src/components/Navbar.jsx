@@ -1,8 +1,8 @@
 import logo from "../assets/products/digitools.png";
 
-export default function Navbar({cartsProp}) {
+export default function Navbar({ cartsProp }) {
   return (
-    <div className="navbar opacity-90 font-semibold px-50  navbar shadow-lg fixed top-0 left-0 w-full z-50 bg-white">
+    <div className="navbar shadow-lg fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md px-4 md:px-10 lg:px-20">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,17 +27,31 @@ export default function Navbar({cartsProp}) {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Item 1</a>
+              <a>Products</a>
             </li>
             <li>
-              <a>Item 1</a>
+              <a>Features</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>Pricing</a>
             </li>
+            <li>
+              <a>Testimonials</a>
+            </li>
+            <li>
+              <a>FAQ</a>
+            </li>
+
+            <a className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-4xl text-white text-sm">
+              Get Started
+            </a>
           </ul>
         </div>
-        <img src={logo} alt="" />
+        <img
+          src={logo}
+          className="h-6 sm:h-8 md:h-10 w-auto object-contain ml-2 md:ml-0"
+          alt=""
+        />
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -59,7 +73,7 @@ export default function Navbar({cartsProp}) {
         </ul>
       </div>
       <div className="navbar-end gap-5">
-        <div className="indicator cursor-pointer">
+        <div className="indicator md:flex cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -80,8 +94,8 @@ export default function Navbar({cartsProp}) {
           </span>
         </div>
 
-        <a className="btn rounded-2xl">Login</a>
-        <a className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-3xl text-white">
+        <a className="btn md:flex sm:text-sm  md:rounded-2xl">Login</a>
+        <a className="btn hidden md:flex bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-3xl text-white">
           Get Started
         </a>
       </div>
